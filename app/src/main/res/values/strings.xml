@@ -4,4 +4,13 @@
     <string name="shivam_upi">shivam@upi</string>
     <string name="qr">QR</string>
     <string name="user">USER</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="check_balance">Check\nBalance</string>
+    <string name="request_money">Request\nMoney</string>
+    <string name="send_to_self">Send to\nSelf</string>
+    <string name="transaction_history">Transaction\nHistory</string>
+    <string name="send">Send to\nMobile</string>
+    <string name="approve_to_pay">Approve to\nPay</string>
+    <string name="send_to_bank">Send to\nBank</string>
+    <string name="my_qr_code">My QR\nCode</string>
 </resources>

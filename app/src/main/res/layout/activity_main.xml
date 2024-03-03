@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#EEEEEA"
     android:background="@color/white"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -55,5 +57,293 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/nitp_building"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="7dp"
+                android:text="@string/pay_now"/>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/mobile"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp"
+                                    android:text="@string/send"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/bank"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="@string/send_to_bank"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/approve"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="@string/approve_to_pay"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/qrcode"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="@string/my_qr_code"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/wallet"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="@string/check_balance"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/request"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="@string/request_money"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/self"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="@string/send_to_self"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/transaction_history"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="@string/transaction_history"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_margin="3dp"
+               android:layout_height="135dp"
+               android:orientation="horizontal">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="0dp"
+                   app:cardBackgroundColor="#F4E176"
+                   app:cardCornerRadius="12dp"
+                   android:layout_marginStart="5dp"
+                   android:layout_margin="7dp"
+                   android:layout_weight="1"
+                   android:layout_height="120dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginStart="13dp"
+                       android:orientation="horizontal">
+                       <ImageView
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:src="@drawable/wallet"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                           android:text="UPI Lite X Balance"/>
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="15dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@drawable/right_arrow"/>
+
+                   </LinearLayout>
+
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="0dp"
+                   app:cardBackgroundColor="#F4E176"
+                   app:cardCornerRadius="12dp"
+                   android:layout_margin="7dp"
+                   android:layout_weight="1"
+                   android:layout_height="120dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginStart="13dp"
+                       android:orientation="horizontal">
+                       <ImageView
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:src="@drawable/card"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="5dp"
+                           android:text="Credit Card"/>
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="15dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@drawable/right_arrow"/>
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+           </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>
